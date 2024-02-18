@@ -16,53 +16,69 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.black,
         centerTitle: true,
       ),
-      body: Column(
-        children: [
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const ChatPat(),
-                ),
-              );
-            },
-            child: const Text('Chatpat'),
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/foodd.jpg"),
+            fit: BoxFit.cover,
           ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Chowmein(),
-                ),
-              );
-            },
-            child: const Text('Chowmein'),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: GridView(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2, // number of items in each row
+              mainAxisSpacing: 300.0, // spacing between rows
+              crossAxisSpacing: 50.0, // spacing between columns
+            ),
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ChatPat(),
+                    ),
+                  );
+                },
+                child: const Text('Chatpat'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Chowmein(),
+                    ),
+                  );
+                },
+                child: const Text('Chowmein'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Momo(),
+                    ),
+                  );
+                },
+                child: const Text('Momo'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Panipuri(),
+                    ),
+                  );
+                },
+                child: const Text('Panipuri'),
+              ),
+            ],
           ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Momo(),
-                ),
-              );
-            },
-            child: const Text('Momo'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const Panipuri(),
-                ),
-              );
-            },
-            child: const Text('Panipuri'),
-          ),
-        ],
+        ),
       ),
     );
   }
