@@ -14,7 +14,7 @@ class Panipuri extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Image.asset(
@@ -22,8 +22,8 @@ class Panipuri extends StatelessWidget {
             width: 500,
             height: 200,
           ),
-          SizedBox(height: 30),
-          ListTile(
+          const SizedBox(height: 30),
+          const ListTile(
             leading: Text(
               '1.',
               style: TextStyle(
@@ -39,8 +39,8 @@ class Panipuri extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 10),
-          ListTile(
+          const SizedBox(height: 10),
+          const ListTile(
             leading: Text(
               '2',
               style: TextStyle(
@@ -56,8 +56,8 @@ class Panipuri extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 10),
-          ListTile(
+          const SizedBox(height: 10),
+          const ListTile(
             leading: Text(
               '3',
               style: TextStyle(
@@ -73,8 +73,8 @@ class Panipuri extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 10),
-          ListTile(
+          const SizedBox(height: 10),
+          const ListTile(
             leading: Text(
               '4',
               style: TextStyle(
@@ -90,8 +90,8 @@ class Panipuri extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 10),
-          ListTile(
+          const SizedBox(height: 10),
+          const ListTile(
             leading: Text(
               '5',
               style: TextStyle(
@@ -107,8 +107,8 @@ class Panipuri extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 10),
-          ListTile(
+          const SizedBox(height: 10),
+          const ListTile(
             leading: Text(
               '6',
               style: TextStyle(
@@ -124,8 +124,8 @@ class Panipuri extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 10),
-          ListTile(
+          const SizedBox(height: 10),
+          const ListTile(
             leading: Text(
               '7',
               style: TextStyle(
@@ -141,8 +141,8 @@ class Panipuri extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 10),
-          ListTile(
+          const SizedBox(height: 10),
+          const ListTile(
             leading: Text(
               '8',
               style: TextStyle(
@@ -158,8 +158,8 @@ class Panipuri extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 10),
-          ListTile(
+          const SizedBox(height: 10),
+          const ListTile(
             leading: Text(
               '9',
               style: TextStyle(
@@ -175,10 +175,10 @@ class Panipuri extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          ListTile(
+          const ListTile(
             leading: Text(
               '10',
               style: TextStyle(
@@ -194,10 +194,10 @@ class Panipuri extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          ListTile(
+          const ListTile(
             leading: Text(
               '11',
               style: TextStyle(
@@ -213,10 +213,10 @@ class Panipuri extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          ListTile(
+          const ListTile(
             leading: Text(
               '12',
               style: TextStyle(
@@ -232,10 +232,10 @@ class Panipuri extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          ListTile(
+          const ListTile(
             leading: Text(
               '13',
               style: TextStyle(
@@ -251,7 +251,7 @@ class Panipuri extends StatelessWidget {
               ),
             ),
           ),
-          Center(
+          const Center(
               child: Text(
             'Thankk youu',
             style: TextStyle(

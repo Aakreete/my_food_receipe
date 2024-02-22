@@ -12,12 +12,12 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Receipe For Different Foods'),
-        foregroundColor: Colors.amber,
-        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.lightBlue,
         centerTitle: true,
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/images/foodd.jpg"),
             fit: BoxFit.cover,
@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: GridView(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2, // number of items in each row
               mainAxisSpacing: 300.0, // spacing between rows
               crossAxisSpacing: 50.0, // spacing between columns
@@ -41,6 +41,11 @@ class HomePage extends StatelessWidget {
                     ),
                   );
                 },
+                style: TextButton.styleFrom(
+                  foregroundColor:
+                      Colors.pink, // Change this line to set text color
+                  backgroundColor: Colors.greenAccent,
+                ),
                 child: const Text('Chatpat'),
               ),
               ElevatedButton(
@@ -52,6 +57,11 @@ class HomePage extends StatelessWidget {
                     ),
                   );
                 },
+                style: TextButton.styleFrom(
+                  foregroundColor:
+                      Colors.pink, // Change this line to set text color
+                  backgroundColor: Colors.greenAccent,
+                ),
                 child: const Text('Chowmein'),
               ),
               ElevatedButton(
@@ -63,6 +73,11 @@ class HomePage extends StatelessWidget {
                     ),
                   );
                 },
+                style: TextButton.styleFrom(
+                  foregroundColor:
+                      Colors.pink, // Change this line to set text color
+                  backgroundColor: Colors.greenAccent,
+                ),
                 child: const Text('Momo'),
               ),
               ElevatedButton(
@@ -74,6 +89,11 @@ class HomePage extends StatelessWidget {
                     ),
                   );
                 },
+                style: TextButton.styleFrom(
+                  foregroundColor:
+                      Colors.pink, // Change this line to set text color
+                  backgroundColor: Colors.greenAccent,
+                ),
                 child: const Text('Panipuri'),
               ),
             ],
