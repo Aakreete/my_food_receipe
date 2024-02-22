@@ -15,7 +15,7 @@ class Chowmein extends StatelessWidget {
       body: ListView(
         children: [
           const SizedBox(
-            height: 10,
+            height: 1,
           ),
           Image.asset(
             'assets/images/chowmein.jpg',

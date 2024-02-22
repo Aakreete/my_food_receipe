@@ -15,7 +15,7 @@ class Panipuri extends StatelessWidget {
       body: ListView(
         children: [
           const SizedBox(
-            height: 10,
+            height: 3,
           ),
           Image.asset(
             'assets/images/panipuri.jpg',
