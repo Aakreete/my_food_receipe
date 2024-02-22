@@ -21,6 +21,7 @@ class Panipuri extends StatelessWidget {
             'assets/images/panipuri.jpg',
             width: 500,
             height: 200,
+            fit: BoxFit.fill,
           ),
           const SizedBox(height: 30),
           const ListTile(

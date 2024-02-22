@@ -19,8 +19,9 @@ class ChatPat extends StatelessWidget {
           ),
           Image.asset(
             'assets/images/chatpat.jpg',
-            width: 500,
+            width: 100,
             height: 200,
+            fit: BoxFit.fill,
           ),
           const SizedBox(height: 30),
           const ListTile(
