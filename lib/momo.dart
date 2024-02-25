@@ -8,14 +8,14 @@ class Momo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Receipe For Mo:mo'),
-        foregroundColor: Colors.amber,
-        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.blue,
         centerTitle: true,
       ),
       body: ListView(
         children: [
           const SizedBox(
-            height: 1,
+            height: 0,
           ),
           Image.asset(
             'assets/images/momo.jpg',
@@ -237,14 +237,6 @@ class Momo extends StatelessWidget {
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
           ),
-          const Center(
-              child: Text(
-            'Thankk youu',
-            style: TextStyle(
-              fontSize: 28,
-              fontWeight: FontWeight.bold,
-            ),
-          )),
         ],
       ),
     );

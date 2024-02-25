@@ -3,6 +3,10 @@ import 'package:my_food_receipe/chatpat.dart';
 import 'package:my_food_receipe/chowmein.dart';
 import 'package:my_food_receipe/momo.dart';
 import 'package:my_food_receipe/panipuri.dart';
+import 'package:my_food_receipe/laughing.dart';
+import 'package:my_food_receipe/aachar.dart';
+import 'package:my_food_receipe/thuppa.dart';
+import 'package:my_food_receipe/samosamatar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -19,7 +23,7 @@ class HomePage extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/foodd.jpg"),
+            image: AssetImage("assets/images/homeepage.jpg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -28,7 +32,7 @@ class HomePage extends StatelessWidget {
           child: GridView(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2, // number of items in each row
-              mainAxisSpacing: 300.0, // spacing between rows
+              mainAxisSpacing: 20, // spacing between rows
               crossAxisSpacing: 50.0, // spacing between columns
             ),
             children: [
@@ -41,12 +45,21 @@ class HomePage extends StatelessWidget {
                     ),
                   );
                 },
-                style: TextButton.styleFrom(
-                  foregroundColor:
-                      Colors.pink, // Change this line to set text color
-                  backgroundColor: Colors.greenAccent,
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(
+                        const Color.fromARGB(255, 191, 222, 244)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        // side: const BorderSide(color: Colors.red),
+                      ),
+                    )),
+                child: const Text(
+                  'Chatpat',
+                  style: TextStyle(
+                    color: Colors.black,
+                  ),
                 ),
-                child: const Text('Chatpat'),
               ),
               ElevatedButton(
                 onPressed: () {
@@ -57,11 +70,15 @@ class HomePage extends StatelessWidget {
                     ),
                   );
                 },
-                style: TextButton.styleFrom(
-                  foregroundColor:
-                      Colors.pink, // Change this line to set text color
-                  backgroundColor: Colors.greenAccent,
-                ),
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(
+                        const Color.fromARGB(255, 191, 222, 244)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        // side: const BorderSide(color: Colors.red),
+                      ),
+                    )),
                 child: const Text('Chowmein'),
               ),
               ElevatedButton(
@@ -73,11 +90,15 @@ class HomePage extends StatelessWidget {
                     ),
                   );
                 },
-                style: TextButton.styleFrom(
-                  foregroundColor:
-                      Colors.pink, // Change this line to set text color
-                  backgroundColor: Colors.greenAccent,
-                ),
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(
+                        const Color.fromARGB(255, 191, 222, 244)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        // side: const BorderSide(color: Colors.red),
+                      ),
+                    )),
                 child: const Text('Momo'),
               ),
               ElevatedButton(
@@ -89,12 +110,101 @@ class HomePage extends StatelessWidget {
                     ),
                   );
                 },
-                style: TextButton.styleFrom(
-                  foregroundColor:
-                      Colors.pink, // Change this line to set text color
-                  backgroundColor: Colors.greenAccent,
-                ),
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(
+                        const Color.fromARGB(255, 191, 222, 244)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        // side: const BorderSide(color: Colors.red),
+                      ),
+                    )),
                 child: const Text('Panipuri'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Laughing(),
+                    ),
+                  );
+                },
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(
+                        const Color.fromARGB(255, 191, 222, 244)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        // side: const BorderSide(color: Colors.red),
+                      ),
+                    )),
+                child: const Text(
+                  'Laughing',
+                  style: TextStyle(
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Aachar(),
+                    ),
+                  );
+                },
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(
+                        const Color.fromARGB(255, 191, 222, 244)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        // side: const BorderSide(color: Colors.red),
+                      ),
+                    )),
+                child: const Text('Aachar'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Thuppa(),
+                    ),
+                  );
+                },
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(
+                        const Color.fromARGB(255, 191, 222, 244)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        // side: const BorderSide(color: Colors.red),
+                      ),
+                    )),
+                child: const Text('Thuppa'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Samosamatar(),
+                    ),
+                  );
+                },
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(
+                        const Color.fromARGB(255, 191, 222, 244)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        // side: const BorderSide(color: Colors.red),
+                      ),
+                    )),
+                child: const Text('Samosamatar'),
               ),
             ],
           ),

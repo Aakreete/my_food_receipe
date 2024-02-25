@@ -8,17 +8,17 @@ class ChatPat extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Receipe For Chatpat'),
-        foregroundColor: Colors.amber,
-        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.blue,
         centerTitle: true,
       ),
       body: ListView(
         children: [
           const SizedBox(
-            height: 1,
+            height: 0,
           ),
           Image.asset(
-            'assets/images/chatpat.jpg',
+            'assets/images/chattpat.webp',
             width: 100,
             height: 200,
             fit: BoxFit.fill,
@@ -176,14 +176,6 @@ class ChatPat extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 4),
-          const Center(
-              child: Text(
-            'Thankk youu',
-            style: TextStyle(
-              fontSize: 28,
-              fontWeight: FontWeight.bold,
-            ),
-          )),
         ],
       ),
     );
